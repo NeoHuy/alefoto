@@ -1,0 +1,3 @@
+orncp_homepage:
+    path:     /
+    defaults: { _controller: ORNCPBundle:Default:index }
