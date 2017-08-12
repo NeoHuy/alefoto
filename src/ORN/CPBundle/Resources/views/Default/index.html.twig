@@ -1,1 +1,54 @@
-Hello World!
+{% extends 'ORNCPBundle::layout.html.twig' %}
+{% block main %}
+    <div class="bg-light lter b-b wrapper-md">
+        <h1 class="m-n font-thin h3 text-black">
+            Cấu hình trang chủ
+        </h1>
+    </div>
+    <div class="wrapper-md">
+
+        {% include 'ORNCPBundle::messages.html.twig' %}
+
+        <div class="panel panel-default">
+            <div class="panel-body">
+
+            </div>
+        </div>
+
+        {% if config is defined %}
+            <div class="bg-light lter b-b wrapper-md">
+                <h1 class="m-n font-thin h3 text-black">
+                    Review new config
+                </h1>
+            </div>
+
+            <div class="panel panel-default">
+                <table class="table b-t b-light">
+                    <thead>
+                    <tr>
+                        <th>Bảng giá</th>
+                        <th>Màu chữ</th>
+                        <th>Chữ to</th>
+                        <th>Chữ nhỏ</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+
+                        </td>
+                        <td style="color: {{ config.color }}">Vũ Lưu</td>
+                        <td style="font-family: HaloHandletter ">{{ config.title }}</td>
+                        <td style="font-family: HaloHandletter ">{{ config.description }}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        {% endif %}
+
+    </div>
+{% endblock %}
+{% block css %}
+{% endblock %}
+{% block js %}
+{% endblock %}

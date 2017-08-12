@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    {% include 'ORNCPBundle::block-head.html.twig' %}
+    {% block css %}{% endblock %}
+</head>
+<body>
+
+
+<div class="app app-header-fixed">
+    <header id="header" class="app-header navbar" role="menu">
+        <!-- navbar header -->
+        <div class="navbar-header bg-dark">
+            <button class="pull-right visible-xs dk" ui-toggle-class="show" target=".navbar-collapse">
+                <i class="glyphicon glyphicon-cog"></i>
+            </button>
+            <button class="pull-right visible-xs" ui-toggle-class="off-screen" target=".app-aside" ui-scroll="app">
+                <i class="glyphicon glyphicon-align-justify"></i>
+            </button>
+            <!-- brand -->
+            <a href="" class="navbar-brand">
+                <span class="hidden-folded">
+                    Alefoto Studio
+                </span>
+            </a>
+            <!-- / brand -->
+        </div>
+        <!-- / navbar header -->
+
+        <!-- navbar collapse -->
+        <div class="collapse pos-rlt navbar-collapse box-shadow bg-white-only">
+            {% block menu %}{% endblock %}
+            <!-- navbar right -->
+            <ul class="nav navbar-nav navbar-right">
+                {% if app.user %}
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle clear" data-toggle="dropdown">
+                            <span class="hidden-sm hidden-md">{{ app.user.username }}</span> <b class="caret"></b>
+                        </a>
+                        <!-- dropdown -->
+                        <ul class="dropdown-menu animated fadeInRight w">
+                            <li><a href="/">Thông tin tài khoản</a></li>
+                            <li><a href="{{ path('fos_user_change_password') }}">Sửa mật khẩu</a></li>
+                            <li><a href="{{ path('fos_user_security_logout') }}">Đăng xuất</a></li>
+                        </ul>
+                        <!-- / dropdown -->
+                    </li>
+                {% endif %}
+            </ul>
+            <!-- / navbar right -->
+        </div>
+        <!-- / navbar collapse -->
+    </header>
+
+    {% include 'ORNCPBundle::menu.html.twig' %}
+
+    <!-- content -->
+    <div id="content" class="app-content" role="main">
+        <div class="app-content-body">
+            <div class="hbox hbox-auto-xs hbox-auto-sm">
+                {% block main %}{% endblock %}
+            </div>
+        </div>
+    </div>
+    <!-- /content -->
+</div>
+
+{% block modal %}{% endblock %}
+<div class="modal fade" id="mediaModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p class="text-center m-b-none">
+                    <i class="fa fa-spin fa-spinner"></i>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include 'ORNCPBundle::block-footer.html.twig' %}
+{% block js %}{% endblock %}
+</body>
+</html>
