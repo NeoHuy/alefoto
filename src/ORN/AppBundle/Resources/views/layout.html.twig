@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    {% include 'ORNAppBundle::block-head.html.twig' %}
+    {% block css %}
+    {% endblock %}
+</head>
+<body>
+{% include 'ORNAppBundle::menu.html.twig' %}
+{% block main %} {% endblock %}
+{% include 'ORNAppBundle::block-footer.html.twig' %}
+{% block js %}{% endblock %}
+</body>
+</html>
