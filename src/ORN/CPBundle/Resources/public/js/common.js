@@ -7,3 +7,5 @@ $(document).ready(function () {
     });
 
 });
+
+$navigation_toggle=jQuery(".toggle-navigation"),$navigation_toggle.on("click",function(){jQuery(".main-navigation").toggleClass("visible")});

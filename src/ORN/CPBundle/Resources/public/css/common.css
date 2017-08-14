@@ -1,312 +1,211 @@
 @font-face {
-    font-family: 'BebasNeue';
-    src: url('../font/BebasNeue.eot');
-    src: url('../font/BebasNeue.woff2') format('woff2'),
-    url('../font/BebasNeue.woff') format('woff'),
-    url('../font/BebasNeue.ttf') format('truetype'),
-    url('../font/BebasNeue.svg#BebasNeue') format('svg'),
-    url('../font/BebasNeue.eot?#iefix') format('embedded-opentype');
+    font-family: 'ClassiqueSaigon';
+    src: url('../font/ClassiqueSaigon.eot');
+    url('../font/ClassiqueSaigon.woff') format('woff'),
+    url('../font/ClassiqueSaigon.ttf') format('truetype'),
+    url('../font/ClassiqueSaigon.svg#ClassiqueSaigon') format('svg'),
+    url('../font/ClassiqueSaigon.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
 }
-
-@font-face {
-    font-family: 'Stacky';
-    src: url('../font/StackyardPERSONALUSE.eot');
-    src: url('../font/StackyardPERSONALUSE.woff2') format('woff2'),
-    url('../font/StackyardPERSONALUSE.woff') format('woff'),
-    url('../font/StackyardPERSONALUSE.ttf') format('truetype'),
-    url('../font/StackyardPERSONALUSE.svg#BebasNeue') format('svg'),
-    url('../font/StackyardPERSONALUSE.eot?#iefix') format('embedded-opentype');
-    font-weight: normal;
-    font-style: normal;
+.font-end {
+    background: #fff;
+    font-family: 'ClassiqueSaigon', "Times New Roman", Arial;
+    font-size: 15px;
+    color: #010101;
+    line-height: 1.6em;
+    padding-top: 96px;
 }
-@font-face {
-    font-family: 'HaloHandletter';
-    src: url('../font/HaloHandletter.eot');
-    src: url('../font/HaloHandletter.woff2') format('woff2'),
-    url('../font/HaloHandletter.woff') format('woff'),
-    url('../font/HaloHandletter.ttf') format('truetype'),
-    url('../font/HaloHandletter.svg#HaloHandletter') format('svg'),
-    url('../font/HaloHandletter.eot?#iefix') format('embedded-opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Exmouth';
-    src: url('../font/Exmouth.woff') format('woff'),
-    url('../font/Exmouth.ttf') format('truetype'),
-    url('../font/Exmouth.svg#Exmouth') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Windsong';
-    src: url('../font/Windsong.eot');
-    src: url('../font/Windsong.woff2') format('woff2'),
-    url('../font/Windsong.woff') format('woff'),
-    url('../font/Windsong.ttf') format('truetype'),
-    url('../font/Windsong.svg#Windsong') format('svg'),
-    url('../font/Windsong.eot?#iefix') format('embedded-opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-table tr,
-table td {
-    vertical-align: middle !important;
-}
-
-.pagination {
-    margin: 0 !important;
-}
-
-.medias img {
-    transition: 0.3s;
-}
-
-.medias img:hover {opacity: 0.7;}
-
-#map {
-    height: 300px;
+.primary {
     width: 100%;
-}
-.carousel,
-.item,
-.active {
-    height: 100%;
-}
-
-.carousel-inner {
-    height: 100%;
-}
-
-/* Background images are set within the HTML using inline CSS, not here */
-
-.fill {
-    background-size: cover !important;
-}
-.fill h1 {
-    width: auto;
-    height: 220px;
-    position: absolute;
-    right: 20px;
-    bottom: 50px;
-    overflow: hidden;
-    font-family: 'BebasNeue';
-    text-transform: uppercase;
-    font-size: 90px;
-    color: #000;
-    text-align: right;
-    opacity: 0.8;
-    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
-    filter: alpha(opacity=80);
-    float: right;
-    padding-top: 15px;
-    z-index: 12;
-}
-.studio-nav {
-    display: none;
-    position: fixed;
-    left: 0;
-    top: 12rem;
-    color: white;
-    z-index: 999;
-    transform: perspective(12rem) translateZ(1rem);
-    -webkit-transform: perspective(12rem) translateZ(1rem);
-    cursor: pointer;
-    background: url(../img/toggleBut_icon.png) no-repeat red;
-    padding:10px;
-    padding-left: 20px;
-    width: 85px;
-    height: 40px;
-    text-align: center;
-    font-size: 14px;
-}
-.lightBox {
+    clear: both;
+    border-bottom: 1px solid #f3f3f3;
+    margin-bottom: 30px;
+    position: relative;
     position: fixed;
     top: 0;
-    left: 100%;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.9);
-    animation: lightBox .6s ease;
-    -webkit-animation: lightBox .6s ease;
-    transition: all 0.8s ease 0s;
-    -webkit-transition: all 0.8s ease 0s;
-    z-index: 99;
+    background: #fff;
+    z-index: 9000;
 }
-.lightBoxShow .lightBox {
-    left: 0;
-    transition: all 0.8s ease 0s;
-    -webkit-transition: all 0.8s ease 0s;
-}
-.lightBoxShow #menu div {
-    display: block;
-}
-
-#menu div {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-}
-
-.nav-bar {
-    max-width: 1260px;
+.header {
+    max-width: 1280px;
     margin: 0 auto;
-    text-align: center;
-}
-
-.menu li {
-    display: inline-block;
-    padding: 1rem 0;
-}
-
-.menu a {
+    padding: 25px 0 20px 0;
+    height: 65px;
     position: relative;
-    font-size: 16px;
-    padding: 1rem;
-    clear: both;
-    overflow: hidden;
-    text-decoration: none;
-    font-weight: 600;
-    cursor: pointer;
-    display: block;
-    font-family: gordita,Helvetica,sans-serif;
-    color: #FFF;
 }
-.menu {
-    margin-bottom: 0;
-    text-align: center;
-}
-.row h1 {
-    width: auto;
-    height: 100px;
+
+.header h1 {
+    margin: 0;
+    margin-top: -6px;
+    margin-bottom: 12px;
+    margin-left: 20px;
+    text-align: left;
     position: absolute;
-    left: 40px;
-    bottom: 40px;
-    overflow: hidden;
-    font-family: 'HaloHandletter';
-    text-transform: uppercase;
-    font-size: 8rem;
-    text-align: right;
-    opacity: 0.8;
-    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
-    filter: alpha(opacity=80);
-    float: left;
-    padding-top: 15px;
-    z-index: 12;
-    background-color: #0f0f0f;
-    color: #FFF;
+    z-index: 999;
 }
-.wedding {
-    position: relative;
+
+.toggle-navigation {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 24px;
 }
-.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+
+.header .main-navigation {
+    position: absolute;
     width: 100%;
+    text-align: right;
+    margin: -4px auto 0 auto;
+    top: 70px;
+    z-index: 800;
+    background: #fff;
+    text-align: center;
+    left: 0;
+    padding: 20px 0;
+    opacity: 0;
+    font-size: 14px;
+    pointer-events: none;
 }
-.landing {
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    padding: 0 10px;
+    display: block;
+    width: 100%;
+    clear: both;
+    text-align: center;
+    right: 20px;
+    height: auto;
+}
+.header .active {
+    padding-bottom: 1px;
+}
+.header li {
+    margin: 0 10px;
+    text-transform: uppercase;
+    list-style: none;
+    display: list-item;
+    padding: 6px 0;
+}
+
+.header .main-navigation {
     position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: right;
+    margin: -4px auto 0 auto;
+    top: 70px;
+    z-index: 800;
+    background: #fff;
+    text-align: center;
+    left: 0;
+    padding: 20px 0;
+    opacity: 0;
+    font-size: 14px;
+    pointer-events: none;
 }
-.landing h1 {
-    font-family: 'HaloHandletter';
-    font-size: 18em;
+.header a {
+    background: transparent;
+    text-decoration: none;
+    color: #010101;
+}
+
+.toggle-navigation:hover {
+    cursor: pointer;
+}
+
+.visible {
+    opacity: 1!important;
+    -webkit-transition: opacity .25s ease-in-out;
+    -o-transition: opacity .25s ease-in-out;
+    transition: opacity .25s ease-in-out;
+    pointer-events: auto!important;
+}
+
+.stories-intro {
+    width: 100%;
+    clear: both;
+    margin-bottom: 20px;
+    margin-top: -30px;
+}
+
+.story-contain {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.story-contain .the-text {
+    padding: 40px 30px;
+}
+.story-contain .large-text {
+    font-size: 40px;
+    line-height: 1em;
+    margin-bottom: 30px;
+}
+.story-contain .small-text {
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+.story-contain .see-their-stories {
+    text-transform: uppercase;
     text-align: center;
 }
-
-.landing h4 {
-    font-family: 'HaloHandletter';
-    font-size: 3em;
-    letter-spacing: 1em;
-    text-align: center;
+.story-contain .left-side {
+    width: 100%;
+    background: url('../img/overlay.png');
+    color: #fff;
 }
-
-.ac-body {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    overflow: hidden;
-    color: #FFF;
-}
-
-.ac-body h1 {
-    font-size: 60px;
-}
-
-.ac-body p {
-    font-size: 45px;
-}
-
-.full-size {
-    height:100%;
-    background: url('../img/no-thumbnail.png') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-@media screen and (max-width: 1600px) {
-    .landing h1 {
-        font-size: 15em;
+@media (min-width: 640px) {
+    .header h1 {
+        text-align: left;
+        margin-bottom: 0;
+        display: block;
+        position: static;
+        background: none;
+        width: 66.6666666666667%;
+        width: 100%;
+        clear: none;
+    }
+    .story-contain .left-side {
+        width: 75%;
     }
 }
 
-@media screen and (max-width: 1100px) {
-    .row h1 {
-        font-size: 60px;
-        height: inherit;
+@media (min-width: 1020px) {
+    .toggle-navigation {
+        display: none;
     }
-    .landing {
-        top: 26%;
+    .header .main-navigation {
+        text-align: right;
+        top: 24px;
+        padding: 0 20px 0 0;
+        background: none;
+        opacity: 1;
+        pointer-events: auto;
     }
-}
-
-@media screen and (max-width: 768px) {
-    .landing h1 {
-        font-size: 6em;
+    .header .active {
+        border-bottom: 1px solid #111;
     }
-    .landing h4 {
-        font-size: 17px;
-    }
-    .row h1 {
-        font-size: 40px;
-        height: inherit;
-    }
-    .ac-body {
-        top : 20%;
-    }
-    .ac-body h1 {
-        font-size: 30px;
-    }
-    .ac-body p {
-        font-size: 20px;
-    }
-
-}
-
-@media screen and (max-width: 544px) {
-    .menu li {
+    .header li {
+        display: inline;
+        margin-right: 30px;
+        margin-left: 0;
         padding: 0;
     }
-    .menu a {
-        padding: 3px;
-    }
-    .row h1 {
-        font-size: 23px;
-        height: inherit;
-    }
-    .landing {
-        top: 20%;
-    }
-
 }
+
+@media (min-width: 1000px) {
+    .header ul {
+        width: 66.6666666666667%;
+    }
+    .story-contain .left-side {
+        width: 50%;
+    }
+}
+
+
+
