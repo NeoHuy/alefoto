@@ -10,4 +10,9 @@ class DefaultController extends Controller
     {
         return $this->render('ORNAppBundle:Default:index.html.twig');
     }
+    
+    public function aboutAction()
+    {
+        return $this->render('ORNAppBundle:Default:about.html.twig');
+    }
 }
