@@ -1,0 +1,16 @@
+<?php
+
+namespace ORN\CPBundle\Controller;
+
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+
+class ProfileController extends Controller
+{
+    public function indexAction()
+    {
+        return $this->render('ORNCPBundle:Profile:index.html.twig', array(
+            // ...
+        ));
+    }
+
+}
