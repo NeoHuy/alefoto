@@ -1,18 +1,86 @@
 {% extends 'ORNAppBundle::layout.html.twig' %}
 {% block main %}
     <style>
-        .stories-intro { background: url('https://tomaszwagner.co/wp-content/uploads/vancouver-wedding-photographer.jpg'); background-size: cover; background-position: right top; }
+        .stories-intro {
+            background: url('https://tomaszwagner.co/wp-content/uploads/vancouver-wedding-photographer.jpg');
+            background-size: cover;
+            background-position: right top;
+        }
     </style>
     <div class="stories-intro">
         <div class="story-contain">
             <div class="left-side">
                 <div class="the-text">
-                    <div class="large-text">Wedding Photographer Tomasz Wagner. Super 8 Films. Vancouver, British Columbia<br>–</div>
-                    <div class="small-text">The in-between and organic moments between people, creative and honest portraiture, beautiful light and unexpected compositions, thoughtful images and films that capture the mood of a wedding day. Based in Vancouver, British Columbia and traveling worldwide</div>
-                    <div class="see-their-stories">Stories<br><img src="https://s3.amazonaws.com/f.cl.ly/items/1F3w2f1L2h2P3h2c0r3d/down-arrow.png" draggable="false"></div>
+                    <div class="large-text">Wedding Photographer Tomasz Wagner. Super 8 Films. Vancouver, British
+                        Columbia<br>–
+                    </div>
+                    <div class="small-text">The in-between and organic moments between people, creative and honest
+                        portraiture, beautiful light and unexpected compositions, thoughtful images and films that
+                        capture the mood of a wedding day. Based in Vancouver, British Columbia and traveling worldwide
+                    </div>
+                    <div class="see-their-stories">Stories<br><img src="{{ asset('bundles/orncp/img/down-arrow.png') }}"
+                                                                   draggable="false"></div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="container storier-container">
+        <div class="row">
+            <div class="col-sm-4 story">
+                <div style="background: url('https://tomaszwagner.co/wp-content/uploads/2017/02/27-bon-accord-vancouver-wedding-small.jpg');
+                                                background-size: cover;
+                                                background-position: right top;">
+                    <i class="post-icon"></i>
+                    <h2>Vancouver Wedding</h2>
+
+                    <h3 class="subtitle">Emma &amp; Cory</h3>
+                    —
+                    <h4>Weddings</h4>
+
+                </div>
+            </div>
+            <div class="col-sm-4 story">
+                <div style="background: url('https://tomaszwagner.co/wp-content/uploads/2017/02/27-bon-accord-vancouver-wedding-small.jpg');
+                                                background-size: cover;
+                                                background-position: right top;">
+                    <i class="post-icon"></i>
+                    <h2>Vancouver Wedding</h2>
+
+                    <h3 class="subtitle">Emma &amp; Cory</h3>
+                    —
+                    <h4>Weddings</h4>
+
+                </div>
+            </div>
+            <div class="col-sm-4 story">
+                <div class="ch" style="background: url('https://tomaszwagner.co/wp-content/uploads/2017/02/27-bon-accord-vancouver-wedding-small.jpg');
+                                                background-size: cover;
+                                                background-position: right top;">
+                    <i class="post-icon"></i>
+                    <h2>Vancouver Wedding</h2>
+
+                    <h3 class="subtitle">Emma &amp; Cory</h3>
+                    —
+                    <h4>Weddings</h4>
+
+                </div>
+            </div>
+            <div class="col-sm-4 story">
+                <div style="background: url('https://tomaszwagner.co/wp-content/uploads/2017/02/27-bon-accord-vancouver-wedding-small.jpg');
+                                                background-size: cover;
+                                                background-position: right top;">
+                    <i class="post-icon"></i>
+                    <h2>Vancouver Wedding</h2>
+
+                    <h3 class="subtitle">Emma &amp; Cory</h3>
+                    —
+                    <h4>Weddings</h4>
+
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 {% endblock %}
 

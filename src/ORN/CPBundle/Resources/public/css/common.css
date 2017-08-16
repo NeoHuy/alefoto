@@ -8,13 +8,23 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'iCielAltus';
+    src: url('../font/iCielAltus.woff') format('woff'),
+    url('../font/iCielAltus.ttf') format('truetype'),
+    url('../font/iCielAltus.svg#iCielAltus') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .font-end {
     background: #fff;
-    font-family: 'ClassiqueSaigon', "Times New Roman", Arial;
+    font-family: 'iCielAltus', 'ClassiqueSaigon', "Times New Roman", Arial;
     font-size: 15px;
     color: #010101;
     line-height: 1.6em;
     padding-top: 96px;
+    letter-spacing: 2px;
 }
 .primary {
     width: 100%;
@@ -221,5 +231,19 @@
     text-align:center
 }
 
+.storier-container {
+    width: 1260px;
+}
 
+.story {
+    padding: 0 10px 20px 10px;
+}
+.story h2, .story h3, .story h4 {
+    margin: 0;
+}
 
+.post-icon {
+    width: 70px;
+    height: 50px;
+    margin: 0 auto 14px auto;
+}
