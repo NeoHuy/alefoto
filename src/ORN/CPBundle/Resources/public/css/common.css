@@ -239,7 +239,7 @@ h2 {
 /*-----------------------------------------------------------------------------------*/
 
 .contact {
-    font-family: 'GaramondMTStd-Regular', 'EB Garamond', Helvetica;
+    font-family: 'ClassiqueSaigon', "Times New Roman", Arial;
     font-size: 15px;
     color: #010101;
     line-height: 1.6em;
@@ -280,7 +280,6 @@ h2 {
     margin: 30px 0;
     text-transform: uppercase;
     background: #f2f2f2;
-    font-family: 'Montserrat', sans-serif;
     padding: 10px 30px;
     border: none;
 }
