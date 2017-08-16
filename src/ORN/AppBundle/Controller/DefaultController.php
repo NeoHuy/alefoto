@@ -8,16 +8,25 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('ORNAppBundle:Default:index.html.twig');
+        $dataView = [
+            'activeHome' => 'active'
+        ];
+        return $this->render('ORNAppBundle:Default:index.html.twig', $dataView);
     }
     
     public function aboutAction()
     {
-        return $this->render('ORNAppBundle:Default:about.html.twig');
+        $dataView = [
+            'activeAbout' => 'active'
+        ];
+        return $this->render('ORNAppBundle:Default:about.html.twig', $dataView);
     }
 
     public function contactAction()
     {
-        return $this->render('ORNAppBundle:Default:contact.html.twig');
+        $dataView = [
+            'activeContact' => 'active'
+        ];
+        return $this->render('ORNAppBundle:Default:contact.html.twig', $dataView);
     }
 }

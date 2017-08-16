@@ -4,12 +4,12 @@
         <div class="toggle-navigation">☰</div>
         <nav role="navigation">
             <ul class="main-navigation">
-                <li class="{{ active }}"><a href="/">Stories</a></li>
-                <li class="{{ active }}"><a href="/">Films</a></li>
-                <li class="{{ active }}"><a href="/">Travels</a></li>
-                <li class="{{ active }}"><a href="/">About</a></li>
-                <li class="{{ active }}"><a href="/">Contact</a></li>
-                <li class="{{ active }}"><a href="/">Journal</a></li>
+                <li class="{{ activeHome is defined ? activeHome : ''}}"><a href="/">Stories</a></li>
+                <li class="{{ activeFilms is defined ? activeFilms : '' }}"><a href="/">Films</a></li>
+                <li class="{{ activeTravels is defined ? activeTravels : '' }}"><a href="/">Travels</a></li>
+                <li class="{{ activeAbout is defined ? activeAbout : '' }}"><a href="/">About</a></li>
+                <li class="{{ activeContact is defined ? activeContact : '' }}"><a href="/">Contact</a></li>
+                <li class="{{ activeJournal is defined ? activeJournal : '' }}"><a href="/">Journal</a></li>
                 <li class="social"><a href="/" target="_blank"><i class="fa fa-facebook"></i></a></li>
                 <li class="social"><a href="/" target="_blank"><i class="fa fa-instagram"></i></a></li>
                 <li class="social"><a href="/" target="_blank"><i class="fa fa-google-plus"></i></a></li>
