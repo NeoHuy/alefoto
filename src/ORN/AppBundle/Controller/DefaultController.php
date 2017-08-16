@@ -15,4 +15,9 @@ class DefaultController extends Controller
     {
         return $this->render('ORNAppBundle:Default:about.html.twig');
     }
+
+    public function contactAction()
+    {
+        return $this->render('ORNAppBundle:Default:contact.html.twig');
+    }
 }

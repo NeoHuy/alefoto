@@ -5,3 +5,7 @@ orn_app_homepage:
 orn_app_aboutpage:
     path:     /about
     defaults: { _controller: ORNAppBundle:Default:about }
+
+orn_app_contactpage:
+    path:     /contact
+    defaults: { _controller: ORNAppBundle:Default:contact }
