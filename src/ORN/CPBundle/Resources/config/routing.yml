@@ -5,3 +5,7 @@ orncp_homepage:
 orncp_profilepage:
     path:     /profile
     defaults: { _controller: ORNCPBundle:Default:profile }
+
+index:
+    path:     /profile
+    defaults: { _controller: ORNCPBundle:Profile:index }
