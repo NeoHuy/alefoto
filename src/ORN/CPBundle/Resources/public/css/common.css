@@ -19,6 +19,11 @@
 h2 {
     font-size: 1.4em;
 }
+
+/*-----------------------------------------------------------------------------------*/
+/* ----------------------------    Menu    ----------------------------------------- */
+/*-----------------------------------------------------------------------------------*/
+
 .font-end {
     background: #fff;
     font-family: 'iCielAltus', 'ClassiqueSaigon', "Times New Roman", Arial;
@@ -264,95 +269,4 @@ h2 {
     background: #f2f2f2;
     padding: 10px 30px;
     border: none;
-}
-
-
-.storier-container {
-    width: 1260px;
-}
-
-.story {
-    padding: 0 10px 20px 10px;
-}
-.story h2, .story h3, .story h4 {
-    margin: 0;
-}
-
-.post-icon {
-    width: 70px;
-    height: 50px;
-    margin: 0 auto 14px auto;
-}
-.tile {
-    width: 100%;
-    position: relative;
-}
-.tiles img {
-    max-width: 100%;
-    display: block;
-}
-.cover:hover {
-    opacity: 1;
-}
-.cover {
-    color: #fff;
-    text-align: center;
-    width: 100%;
-    position: static;
-    -webkit-transition: opacity .2s ease-in-out;
-    -o-transition: opacity .2s ease-in-out;
-    transition: opacity .2s ease-in-out;
-    padding: 20px 10px;
-    background: #111;
-}
-
-.cover a {
-    color: #fff;
-}
-
-.cover-text {
-    text-align: center;
-    width: 100%;
-    top: 50%;
-    padding: 0 30px;
-}
-
-.tiles h2 {
-    font-size: 14px;
-    font-weight: normal;
-    margin: 0 0 .2em 0;
-}
-
-.tiles h3 {
-    font-size: 15px;
-    margin: 0;
-    text-transform: none;
-    font-weight: normal;
-}
-
-@media (min-width: 1000px) {
-    .hide-wrap {
-        display: block;
-    }
-}
-
-@media (min-width: 640px) {
-    .cover {
-        top: 0;
-        bottom: 0!important;
-        position: absolute;
-        opacity: 0;
-        padding: 0;
-        overflow: hidden;
-    }
-    .cover-text {
-        position: absolute;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        -o-transform: translateY(-50%);
-        transform: translateY(-50%);
-    }
-    .hide-wrap {
-        display: none;
-    }
 }
