@@ -5,6 +5,7 @@ namespace ORN\CPBundle\Form;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 
 class UserType extends AbstractType
 {
@@ -13,7 +14,12 @@ class UserType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('phone')->add('address');
+        $builder->add('email')
+            ->add('phone')
+            ->add('address')
+            ->add('submit', SubmitType::class, [
+                'label' => 'Lưu'
+            ]);
     }
     
     /**
