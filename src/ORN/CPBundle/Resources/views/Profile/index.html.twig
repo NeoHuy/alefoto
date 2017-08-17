@@ -1,7 +1,13 @@
-{% extends "::base.html.twig" %}
-
-{% block title %}ORNCPBundle:Profile:index{% endblock %}
-
-{% block body %}
-<h1>Welcome to the Profile:index page</h1>
+{% extends 'ORNCPBundle::layout.html.twig' %}
+{% block main %}
+    <div class="bg-light lter b-b wrapper-md">
+        <h1 class="m-n font-thin h3 text-black">
+            Thông tin tài khoản
+        </h1>
+    </div>
+    <div class="wrapper-md">
+        {% include 'ORNCPBundle::messages.html.twig' %}
+        {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
+        {{ form_end(form) }}
+    </div>
 {% endblock %}
