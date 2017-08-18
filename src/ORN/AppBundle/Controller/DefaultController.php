@@ -24,8 +24,11 @@ class DefaultController extends Controller
 
     public function contactAction()
     {
+        $user = $this->getDoctrine()->getRepository('ORNCPBundle:User')->find(1);
+
         $dataView = [
-            'activeContact' => 'active'
+            'activeContact' => 'active',
+            'user' => $user
         ];
         return $this->render('ORNAppBundle:Default:contact.html.twig', $dataView);
     }
