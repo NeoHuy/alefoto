@@ -5,7 +5,7 @@ namespace ORN\CPBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
-use ORN\CPBundle\Form\Usertype;
+use ORN\CPBundle\Form\UserType;
 
 class ProfileController extends Controller
 {
