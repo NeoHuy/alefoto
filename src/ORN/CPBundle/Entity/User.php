@@ -22,14 +22,14 @@ class User extends BaseUser
     protected $id;
 
     /**
-     * @var string;
+     * @var string
      *
      * @ORM\Column(name="phone", type="string", length=50, nullable=true)
      */
     private $phone;
 
     /**
-     * @var string;
+     * @var string
      *
      * @ORM\Column(name="address", type="string", length=255, nullable=true)
      */
