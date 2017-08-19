@@ -1,6 +1,6 @@
 orncp_homepage:
     path:     /
-    defaults: { _controller: ORNCPBundle:Default:index }
+    defaults: { _controller: ORNCPBundle:Default:config }
 
 orncp_profile:
     path:     /profile
